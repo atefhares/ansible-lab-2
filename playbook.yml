@@ -1,0 +1,10 @@
+---
+- name: Install ALL roles
+  remote_user: ec2-user
+  hosts: EC2
+  become: true
+
+  roles:
+    # - nginx
+    # - gocd
+    - nexues
